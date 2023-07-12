@@ -7,7 +7,7 @@ WORKDIR /opt/tomcat
 RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.11/bin/apache-tomcat-10.1.11.tar.gz
 RUN tar xvfz apache*.tar.gz
 RUN mv apache-tomcat-10.1.11/* /opt/tomcat/.
-RUN yum -y install java
+RUN yum -y install java-1.8.0-openjdk
 RUN java -version
 
 WORKDIR /opt/tomcat/webapps
