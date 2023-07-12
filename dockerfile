@@ -1,4 +1,4 @@
-FROM linux
+FROM debian
 
 
 RUN mkdir /opt/tomcat/
