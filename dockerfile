@@ -1,4 +1,4 @@
-FROM centos
+FROM amazonlinux
 
 
 RUN mkdir /opt/tomcat/
