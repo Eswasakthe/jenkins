@@ -4,7 +4,7 @@ FROM centos
 RUN mkdir /opt/tomcat/
 
 WORKDIR /opt/tomcat
-RUN curl -o https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.11/bin/apache-tomcat-10.1.11.tar.gz
+RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.11/bin/apache-tomcat-10.1.11.tar.gz
 RUN tar xvfz apache*.tar.gz
 RUN mv apache-tomcat-10.1.11/* /opt/tomcat/.
 RUN yum -y install java
